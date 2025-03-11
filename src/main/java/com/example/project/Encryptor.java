@@ -8,7 +8,7 @@ public class Encryptor {
       if (messageLen == 0) {
         return 1;
       }
-    return (int) Math.ceil((double) messageLen / rows);
+    return (int) Math.ceil((double) messageLen / rows); //i learned this from https://www.w3schools.com/java/ref_math_ceil.asp
  }   
     
     public static String[][] generateEncryptArray(String message, int rows) {
@@ -51,7 +51,7 @@ public class Encryptor {
         for (int col = columns - 1; col >= 0; col--) {
             for (int r =0; r < rows; r++) {
                 if (idx < encryptedMessage.length()) {
-                    array[r][col] = String.valueOf(encryptedMessage.charAt(idx));
+                    array[r][col] = String.valueOf(encryptedMessage.charAt(idx)); // i learned this from https://www.w3schools.com/java/ref_string_valueof.asp
                     idx++;
                 }
             }
